@@ -1,0 +1,38 @@
+.site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem var(--page-padding);
+}
+
+.site-logo {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.site-nav a {
+  opacity: 0.8;
+  transition: opacity 180ms ease;
+}
+
+.site-nav a:hover {
+  opacity: 1;
+}

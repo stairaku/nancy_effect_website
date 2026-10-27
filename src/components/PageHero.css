@@ -1,0 +1,39 @@
+.page-hero {
+  padding:
+    clamp(10rem, 18vw, 14rem)
+    var(--page-padding)
+    var(--section-space);
+}
+
+.page-hero__inner {
+  width: min(100%, var(--page-width));
+  margin: 0 auto;
+}
+
+.page-hero__eyebrow {
+  margin: 0 0 1.5rem;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.page-hero__title {
+  max-width: 900px;
+  margin: 0;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.page-hero__description {
+  max-width: 650px;
+  margin: 2rem 0 0;
+
+  color: var(--color-text-soft);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}

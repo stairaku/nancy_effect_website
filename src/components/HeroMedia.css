@@ -1,0 +1,29 @@
+.hero-media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.hero-media__placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #d6cec6,
+      #eee9e4
+    );
+
+  color: var(--color-text-soft);
+
+  transition: transform 8s ease;
+}
+
+.hero:hover .hero-media__placeholder {
+  transform: scale(1.02);
+}
