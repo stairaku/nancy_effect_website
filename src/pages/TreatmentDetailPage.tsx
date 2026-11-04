@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { PageHero } from '../components/PageHero';
+import { TreatmentBookingInfo } from '../components/TreatmentBookingInfo';
 import { treatments } from '../data/treatments';
 import './ContentPages.css';
 
@@ -22,6 +23,7 @@ export function TreatmentDetailPage() {
         <p>Details and pricing are subject to confirmation with Nancy before publication.</p>
         <Link to="/contact">Contact Nancy</Link>
       </section>
+      <TreatmentBookingInfo />
     </>
   );
 }
