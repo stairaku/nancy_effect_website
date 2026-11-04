@@ -9,6 +9,7 @@ import { AboutPage } from './pages/AboutPage';
 import { FAQPage } from './pages/FAQPage';
 import { ContactPage } from './pages/ContactPage';
 import { FinancingPage } from './pages/FinancingPage';
+import { BookingPage } from './pages/BookingPage';
 import { SiteLayout } from './layouts/SiteLayout';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/financing" element={<FinancingPage />} />
+          <Route path="/book" element={<BookingPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
