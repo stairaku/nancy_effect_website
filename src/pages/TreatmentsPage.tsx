@@ -1,18 +1,19 @@
 import { Link } from 'react-router-dom';
 import { PageHero } from '../components/PageHero';
-import { homeContent } from '../data/homeContent';
+import { treatments } from '../data/treatments';
 import './ContentPages.css';
 
 export function TreatmentsPage() {
   return (
     <>
-      <PageHero eyebrow="The Nancy Effect™" title="Treatments" description="Explore the treatments featured on Nancy’s previous homepage." />
+      <PageHero eyebrow="The Nancy Effect™" title="All Treatments" description="Explore medical aesthetics, lasers and microneedling." />
       <section className="content-section">
         <div className="content-grid">
-          {homeContent.treatments.map(treatment => (
+          {treatments.map(treatment => (
             <article className="content-card" key={treatment.slug}>
               <h2>{treatment.title}</h2>
               <p>{treatment.description}</p>
+              <p><strong>From:</strong> {treatment.pricing}</p>
               <Link to={`/treatments/${treatment.slug}`}>View treatment</Link>
             </article>
           ))}
