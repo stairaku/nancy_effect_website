@@ -1,4 +1,5 @@
 import { PageHero } from '../components/PageHero';
+import { clinicContact } from '../data/clinicContact';
 import './ContentPages.css';
 
 export function BookingPage() {
@@ -12,7 +13,7 @@ export function BookingPage() {
         <h3>New Medical Aesthetics Clients</h3>
         <p>Complete a New Client Inquiry Form with your aesthetic goals and budget. Lauren, Nancy’s patient coordinator, will contact you within two business days to discuss possible treatment options.</p>
         <h3>Existing Clients</h3>
-        <p>Send a direct message to <a href="https://www.instagram.com/nurseinjectornancy/">@nurseinjectornancy</a> or call/text <a href="tel:+16048339560">604-833-9560</a>.</p>
+        <p>Send a direct message to <a href={clinicContact.instagramUrl} target="_blank" rel="noopener noreferrer">{clinicContact.instagramHandle}</a> or call/text <a href={clinicContact.phoneHref}>{clinicContact.phoneDisplay}</a>.</p>
         <h2>Consultation Process</h2>
         <ol>
           <li><strong>Inquiry:</strong> Submit your goals and concerns for review.</li>
@@ -32,7 +33,7 @@ export function BookingPage() {
         <h3>Late / No-Show Policy</h3>
         <p>The original site provides a 15-minute grace period and describes deposit forfeiture for arrivals after 15 minutes. Specific handling of arrivals within the grace period depends on the next client’s arrival.</p>
         <h2>Questions Before Booking?</h2>
-        <p>Call or text <a href="tel:+16048339560">604-833-9560</a> · Monday–Friday, 10:00 AM–5:00 PM</p>
+        <p>Call or text <a href={clinicContact.phoneHref}>{clinicContact.phoneDisplay}</a> · {clinicContact.hours}</p>
         <p><strong>Pending:</strong> Original inquiry form, booking portal link, and Nancy’s approval of current policies.</p>
       </section>
     </>
